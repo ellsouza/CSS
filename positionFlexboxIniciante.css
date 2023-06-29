@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:room{
+    font-size: 62.5%;
+}
+body{
+  background-color: rgb(41, 37, 37);
+  
+}
+.boxes{
+    position: relative;
+    display: flex ;
+    flex-wrap: wrap; 
+}
+.box + span{
+display: none;
+}
+.box{
+    height: 10rem;
+    width: 10rem;
+    margin:1.5rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    color:whitesmoke;
+    background-color: violet;
+    display: inline-block;   
+    flex: 30%;  
+}
+/* .box:nth-child(1){
+    position:absolute;
+    top: 0px;
+    left: 3.0rem;
+}
+.box:nth-child(n+2){
+    display: none;
+} */
+
+ /* .box:nth-child(2){
+    position:fixed;
+    /* para fixar um elemento */
+    /* top: 15px; 
+ }*/
+ nav.menu{
+    position:fixed;
+    background-color: turquoise;
+    width: 100%;
+    height: 7rem;
+    z-index:1;
+    /* z-index para priorizar elemento */
+    text-align:start;
+ }
+ img{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+ }
+
+h1{
+    color:#fff;
+    font-size: 3.0rem;
+    padding-top: 7rem;
+}
+.lista, p{
+    margin:1.5rem;
+    padding: 3.00rem;
+    color:#fff;
+}
+.contact-list p{
+    top: 0px;
+    position:sticky;
+    top: 7rem;
+    /* o position-stick permite prender algo e modifica-lo de acordo com a necessidade da página durante a rolagem de tela */
+    background-color: greenyellow;
+    width: 100%;
+    margin:0;
+}
+p{
+    color:white;
+}
+nav li{
+    display:inline-block;
+}
